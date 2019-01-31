@@ -1,0 +1,36 @@
+CREATE TABLE coins (
+    coinid SERIAL PRIMARY KEY,
+    cmcid integer NOT NULL,
+    name character varying(50) NOT NULL,
+    symbol character varying(50) NOT NULL,
+    priceeur real NOT NULL
+);
+
+CREATE TABLE usercoins (
+    usercoinid SERIAL PRIMARY KEY,
+    userid integer NOT NULL,
+    name character varying(50) NOT NULL,
+    symbol character varying(50) NOT NULL,
+    invested real NOT NULL,
+    amount real NOT NULL,
+    madelost real,
+    worth real,
+    priceeur real,
+    lives character varying(50) NOT NULL,
+    date_added text,
+    date_updated text
+);
+
+CREATE TABLE users (
+    userid SERIAL PRIMARY KEY,
+    email_address text NOT NULL,
+    password text NOT NULL,
+    date_register text
+);
+
+CREATE TABLE usersettings (
+    usersettingid SERIAL PRIMARY KEY,
+    userid integer NOT NULL,
+    name character varying(50) NOT NULL,
+    value character varying(50) NOT NULL
+);

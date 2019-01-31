@@ -1,0 +1,19 @@
+{
+  "DBHost": "postgressdbhost",
+  "DBPort": "5432",
+  "DBUser": "postgressdbuser",
+  "DBPassword": "postgressdbpassword",
+  "DBName": "postgressdbdbname",
+  "Port": "8001",
+  "JWTSigningKey": "JWTSigningKeyhello",
+  "RestAPIPath": "/api/v1",
+  "RestAPIURL": "http://localhost",
+  "APPName": "Crypto Portfolio",
+  "CMCApiKeys": [
+    { "APIKey": "xxxxxxxxxxx" },
+    { "APIKey": "xxxxxxxxxxx" },
+    { "APIKey": "xxxxxxxxxxx" },
+    { "APIKey": "xxxxxxxxxxx" },
+    { "APIKey": "xxxxxxxxxxx" },
+  ]
+}
